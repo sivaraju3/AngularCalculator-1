@@ -1,5 +1,5 @@
-FROM node:14 AS builder
-RUN mkdir /node-app
+FROM node:14 
+RUNmkdir /node-app
 WORKDIR /node-app
 COPY package.json .
 RUN npm install
