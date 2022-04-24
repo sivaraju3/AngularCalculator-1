@@ -1,5 +1,5 @@
-FROM node:14 
-RUNmkdir /node-app
+FROM node:16-bullseye
+RUN mkdir /node-app
 WORKDIR /node-app
 COPY package.json .
 RUN npm install
