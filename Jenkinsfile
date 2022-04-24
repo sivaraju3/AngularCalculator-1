@@ -2,9 +2,9 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://github.com/sivaraju3/AngularCalculator-1.git', 'dockerhub') {
+    docker.withRegistry('https://registry.hub.docker.com', 'dockerHub') {
 
-        def customImage = docker.build("sivaraju3/dockerweb")
+        def customImage = docker.build("sivaraju369/dockerweb1")
 
         /* Push the container to the custom Registry */
         customImage.push()
