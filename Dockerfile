@@ -1,4 +1,4 @@
-FROM node:16-bullseye
+FROM node:16-bullseye AS builder
 RUN mkdir /node-app
 WORKDIR /node-app
 COPY package.json .
